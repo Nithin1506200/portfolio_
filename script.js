@@ -53,9 +53,9 @@ container.addEventListener('mouseleave', e => {
     // pic.style.transform= 'scale(1)';
     
 });
-window.onscroll = function() {myFunction()};
+window.onscroll = function() {scrollFun()};
 
-function myFunction() {
+function scrollFun() {
 let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
 let height = document.documentElement.scrollHeight- document.documentElement.clientHeight ;
 let scrolled = (winScroll / height) * 100;
