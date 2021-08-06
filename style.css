@@ -431,7 +431,7 @@ header  a{
     color: rgb(205, 207, 207);
 }
 
-.projects img {
+.projects a img {
  
    border-radius:5px;
     margin: 50px;
