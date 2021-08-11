@@ -311,16 +311,21 @@ header  a{
     margin-left: 10px;
     border-radius:10px ;
 }
-
+/* 
 .studies    {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
     height: 90%;
+} */
+.session_2 button {
+    width: 100px;
+    border: 0;
+    color: rgb(157, 255, 127);
 }
-.session_2 .personal_info .name {
-   background-color: rgba(2,2,2,.1);
+.session_2 .name {
+   background-color: rgba(112, 93, 7, 0.1);
     border-radius: 10px;
     border:black 1px solid ;
     width: 90%;
@@ -329,16 +334,13 @@ header  a{
     margin: 5px;
     font-family: 'Righteous', cursive;
     box-shadow: 2px 2px 4px rgb(0, 0, 0);
+
 }
-.session_2 .personal_info .name:hover {
-    box-shadow: -2px -2px 4px rgb(0, 0, 0);
+.session_2 .name:hover {
     cursor: pointer;
 }
-.session_2 .personal_info .name:active {
-    transform:translateY(4px) ;
-}
 #engineering {
-    background: white;
+    background: rgb(0, 0, 0);
 }
 
 /*  MAPS MAPS MAPS MAPS MAPS MAPS MAPS MAPS MAPS */
@@ -401,6 +403,17 @@ header  a{
     border-radius: 5px;
     padding-bottom: 100px;
 
+}
+.projects .box:hover li img {
+    animation: rotatelogo .5s ease-in-out forwards ;
+} 
+@keyframes rotatelogo {
+    from {
+        rotate: 0deg;
+    }
+    to {
+        rotate: 360deg;
+    }
 }
 .projects .container1 h2 {
     color:  rgb(88, 88, 88);
