@@ -90,9 +90,9 @@ const sclbtn=document.getElementById("school");
 const clgbtn=document.getElementById("college");
 const engbtn=document.getElementById("engineering");
 sclbtn.addEventListener('click',()=>{
-    sclbtn.style.backgroundColor='white';
-    clgbtn.style.backgroundColor='rgb(2,2,2,.1)';
-    engbtn.style.backgroundColor='rgb(2,2,2,.1)';
+    sclbtn.style.backgroundColor='black';
+    clgbtn.style.backgroundColor='rgba(112, 93, 7, 0.1)';
+    engbtn.style.backgroundColor='rgba(112, 93, 7, 0.1)';
     map = new google.maps.Map(document.getElementById("map"), {
         center: svmmp,
         zoom: 17,
@@ -103,9 +103,9 @@ sclbtn.addEventListener('click',()=>{
     });
 });
 clgbtn.addEventListener('click',()=>{
-    clgbtn.style.backgroundColor='white';
-    sclbtn.style.backgroundColor='rgb(2,2,2,.1)';
-    engbtn.style.backgroundColor='rgb(2,2,2,.1)';
+    clgbtn.style.backgroundColor='black';
+    sclbtn.style.backgroundColor='rgba(112, 93, 7, 0.1)';
+    engbtn.style.backgroundColor='rgba(112, 93, 7, 0.1)';
     map = new google.maps.Map(document.getElementById("map"), {
         center: cjcmp,
         zoom: 17,
@@ -117,9 +117,9 @@ clgbtn.addEventListener('click',()=>{
     });
 });
 engbtn.addEventListener('click',()=>{
-    engbtn.style.backgroundColor='white';
-    clgbtn.style.backgroundColor='rgb(2,2,2,.1)';
-    sclbtn.style.backgroundColor='rgb(2,2,2,.1)';
+    engbtn.style.backgroundColor='black';
+    clgbtn.style.backgroundColor='rgba(112, 93, 7, 0.1)';
+    sclbtn.style.backgroundColor='rgba(112, 93, 7, 0.1)';
     map = new google.maps.Map(document.getElementById("map"), {
         center: dsump,
         zoom: 17,
