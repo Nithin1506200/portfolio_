@@ -83,7 +83,7 @@ document.getElementById("Mybar").style.width = scrolled + "%";
         map:map
     });
 
- 
+
 }
 
 const sclbtn=document.getElementById("school");
@@ -137,23 +137,23 @@ let startX;
 let scrollLeft;
 
 slider.addEventListener('mousedown', (e) => {
-  isDown = true;
-  cursor.style.cursor="none";
-  startX = e.pageX - slider.offsetLeft;
-  scrollLeft = slider.scrollLeft;
+isDown = true;
+cursor.style.cursor="none";
+startX = e.pageX - slider.offsetLeft;
+scrollLeft = slider.scrollLeft;
 });
 slider.addEventListener('mouseleave', () => {
-  isDown = false;
+isDown = false;
 });
 slider.addEventListener('mouseup', () => {
-  isDown = false;
-  cursor.style.cursor="url('./icons.pack/cursor2.png'), auto";
+isDown = false;
+cursor.style.cursor="url('./icons.pack/cursor2.png'), auto";
 });
 slider.addEventListener('mousemove', (e) => {
-  if(!isDown) return;
-  e.preventDefault();
-  const x = e.pageX - slider.offsetLeft;
-  const walk = (x - startX) * 1; //scroll-fast
-  slider.scrollLeft = scrollLeft - walk;
- 
+if(!isDown) return;
+e.preventDefault();
+const x = e.pageX - slider.offsetLeft;
+const walk = (x - startX) * 1; //scroll-fast
+slider.scrollLeft = scrollLeft - walk;
+
 });
