@@ -9,7 +9,7 @@ body {
     min-height: 100vh;
     background: rgb(29, 28, 28);
     overflow-x: hidden;
-    cursor: url('./cursor2.png'), auto;
+    cursor: url('./icons_pack/cursor2.png'), auto;
     scroll-snap-type: mandatory;
     scroll-snap-points-y: repeat(100vh);
     scroll-snap-type: y mandatory;
@@ -460,10 +460,31 @@ header  a{
 
 
 
-.internships {
+.hobbies {
     scroll-snap-align: start;
     min-height: 100vh;
     width:100%;
-    background-color: rgb(73, 23, 57);
-    padding: top 50px;
+    background-color: rgb(20, 23, 32);
+    padding-top:50px;
+}
+
+
+.hobbies .head {
+    display: flex;
+align-items: center;
+justify-content: center;
+}
+.hobbies img  {
+    animation: tilt .6s ease-in-out infinite alternate;
+    
+}
+@keyframes tilt {
+    from {
+        rotate: 10deg;
+        opacity: 0.5;
+    }
+    to {
+        rotate: -10deg;
+        opacity: 1;
+    }
 }
