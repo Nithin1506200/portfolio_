@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing:border-box;
 }
+html {
+    scroll-behavior: smooth;
+  }
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 body {
     font-family: "poppins", sans-serif;
@@ -475,7 +478,7 @@ align-items: center;
 justify-content: center;
 }
 .hobbies img  {
-    animation: tilt .5s ease-in-out infinite alternate;
+    animation: tilt .8s ease-in-out infinite alternate;
     
 }
 @keyframes tilt {
@@ -488,6 +491,11 @@ justify-content: center;
         opacity: 1;
     }
 }
-
+.hobbies .text {
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0 2rem ;
+    
+}
 
 /*  niti   */ 
