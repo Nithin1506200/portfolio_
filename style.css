@@ -475,7 +475,7 @@ align-items: center;
 justify-content: center;
 }
 .hobbies img  {
-    animation: tilt .6s ease-in-out infinite alternate;
+    animation: tilt .5s ease-in-out infinite alternate;
     
 }
 @keyframes tilt {
