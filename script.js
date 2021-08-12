@@ -138,17 +138,16 @@ let scrollLeft;
 
 slider.addEventListener('mousedown', (e) => {
   isDown = true;
-
+  cursor.style.cursor="none";
   startX = e.pageX - slider.offsetLeft;
   scrollLeft = slider.scrollLeft;
 });
 slider.addEventListener('mouseleave', () => {
   isDown = false;
- 
 });
 slider.addEventListener('mouseup', () => {
   isDown = false;
- 
+  cursor.style.cursor="url('./icons.pack/cursor2.png'), auto";
 });
 slider.addEventListener('mousemove', (e) => {
   if(!isDown) return;
