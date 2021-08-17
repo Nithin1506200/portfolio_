@@ -519,17 +519,18 @@ justify-content: center;
     background-color: rgb(10, 102, 163);
     z-index: 100;
     width: 600px;
-    margin: 2rem;
+    margin:2rem;
 }
 .hobbies a img {
     animation: none;
    
     margin-bottom: 2rem;
+    margin-right: 1rem;
 
 }
 .hobbies span {
     position:absolute;
-    margin: 2.8rem;
+    margin: 2.8rem 0;
 
 
 }
