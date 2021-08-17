@@ -513,5 +513,17 @@ justify-content: center;
     margin: 0 2rem ;
     
 }
+.hobbies .vid {
 
+    display: flex;
+    justify-content: center;
+    top: 2rem;
+
+}
+.hobbies .vid iframe {
+    border:none;
+    height: 400px;
+    width: 800px;
+    padding-top: 2rem;
+}
 /*  niti   */ 
