@@ -14,7 +14,7 @@ const container = document.querySelector('.container');
 const pic=document.querySelector(".mypic");
 const info=document.querySelector(".info");
 const discription=document.querySelector(".discription");
-const about=document.querySelector(".about");
+//const about=document.querySelector(".about");
 const title=document.querySelector(".info h1");
 container.addEventListener('mousemove', e => {
     // console.log(e.pageX,e.pageY);
@@ -31,7 +31,7 @@ container.addEventListener('mouseenter', e => {
     // pic.style.-webkit-transform = 'translateZ(60px)';
     info.style.transform= 'translateZ(80px)';
     discription.style.transform= 'translateZ(50px)';
-    about.style.transform= 'translateZ(40px)';
+    //about.style.transform= 'translateZ(40px)';
 
     // pic.style.transform= 'scale(1.1)';
     // info.style.transform= 'scale(1.1)';
@@ -45,7 +45,7 @@ container.addEventListener('mouseleave', e => {
     pic.style.transform= 'translateZ(0) rotate(0deg)';
     info.style.transform= 'translateZ(0)';
     discription.style.transform= 'translateZ(0)';
-    about.style.transform= 'translateZ(0)';
+   // about.style.transform= 'translateZ(0)';
     title.style.transform='scale(1)';
     // info.style.transform= 'scale(1)';
     // discription.style.transform= 'scale(1)';

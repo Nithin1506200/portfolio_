@@ -13,6 +13,22 @@
     <link rel="icon" href="./icons_pack/n.png" type="icon/png">
 </head>
 <body>
+    <div class="preload">
+            <div class="container1">
+                <div class="dot dot1"></div>
+                <div class="dot dot2"></div>
+                <div class="dot dot3"></div>
+            </div>
+            <p>Loading...</p>
+            <div class="progressw">
+                <div class="windowprogress"></div>
+            </div>
+            <div class="browser">
+            <span> Recommended Browser</span> 
+            
+            <img src="https://www.mozilla.org/media/protocol/img/logos/firefox/browser/logo-word-hor-xs.c87882e8c93c.png" alt="firefoxlogo">
+        </div>
+    </div>
     <a class="up"  href="#top"> Top</a>
     <div class="cursor"></div>
     <div class="read-progressions" id='Mybar'></div>
@@ -124,7 +140,8 @@
 
             <ul>
                 <li>Encryption and Decryption</li>
-                <li>Presentation layer of https </li>
+                <li>Presentation </li>
+                <li>HTTPS</li>
                 <li>* Encrypt text <img src="./icons_pack/pythonlogo.png" width="20px" height="20px" ></img>  </li>
                 <li>* Encrypt audio <img src="./icons_pack/matlabicon.png" width="16px" height="16px" ></img> </li>
                 <li>Undestanding of Private key and Public key</li>
@@ -202,7 +219,20 @@
 
 
 </div>
-
+ <script >
+        let loadfun=document.querySelector(".preload");
+        let progressBar=document.querySelector(".windowprogress");
+        client = new XMLHttpRequest();
+        client.onprogress = function(e) {
+      console.log(e.total);
+    progressBar.style.width=e.loaded/e.total*200+"px";
+  
+}
+        window.onload = () => {
+            loadfun.classList.add("loadcomplete");
+            setTimeout( ()=> { loadfun.style.display='none';},5000)
+        };
+</script> 
     <script src="script.js"></script>
     <script
 
