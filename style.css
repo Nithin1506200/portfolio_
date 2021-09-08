@@ -50,7 +50,7 @@
     animation: load1 0.5s infinite alternate;
  
 }
-.preload .container1{
+.preload .container1i{
     display: inline-block;
     height: 50px;
     
@@ -230,10 +230,10 @@ header  a{
     color: white;
     text-decoration: none;
     box-sizing: border-box;
-    font-family: 'Righteous', cursive;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.5em;
     margin-right: 10px;
-    background: rgb(39, 47, 53);
+    background: rgb(218, 74, 69);
     border-radius:10% ;   
 }
 .glass {

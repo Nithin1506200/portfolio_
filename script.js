@@ -140,6 +140,7 @@ slider.addEventListener('mousedown', (e) => {
 isDown = true;
 startX = e.pageX - slider.offsetLeft;
 scrollLeft = slider.scrollLeft;
+console.log("enter")
 });
 slider.addEventListener('mouseleave', () => {
 isDown = false;
