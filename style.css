@@ -344,7 +344,7 @@ header  a{
     justify-content: center;
     margin-top: 2rem;
     transition: all .5s ease-out;
-    text-shadow: 1px 1px 3px rgb(62, 218, 210);
+   color: rgb(101, 255, 55);
     
 }
 .discription {
