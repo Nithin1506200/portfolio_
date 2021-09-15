@@ -301,10 +301,10 @@ header  a{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    animation: myintro 10s ease-out ;
+  
 }
 .cardintro {
-    animation: myintro 5s linear ease-out;
+    animation: myintro 10s ease-out;
 }
 @keyframes myintro {
     0% {

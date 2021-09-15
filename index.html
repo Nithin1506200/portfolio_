@@ -222,7 +222,7 @@
         let loadfun=document.querySelector(".preload");
         let progressBar=document.querySelector(".windowprogress");
         client = new XMLHttpRequest();
-
+    let caard = document.querySelector(".card");
     client.upload.addEventListener("progress", (e) => {
     progressBar.style.width=e.loaded/e.total*200+"px";
   
@@ -230,6 +230,7 @@
         window.onload = () => {
             loadfun.classList.add("loadcomplete");
            // setTimeout( ()=> { loadfun.style.display='none';},5000)
+            caard.classList.add("cardintro");
         };
 </script> 
     <script src="script.js"></script>
