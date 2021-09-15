@@ -73,9 +73,6 @@
         </div>
     </div> 
     </div>
-
-    
-
     <div class="session_2 child" id="Session_2">
         <!-- <div class="personal_info">
 <!-- 
@@ -225,14 +222,14 @@
         let loadfun=document.querySelector(".preload");
         let progressBar=document.querySelector(".windowprogress");
         client = new XMLHttpRequest();
-        client.onprogress = function(e) {
-      console.log(e.total);
+
+    client.upload.addEventListener("progress", (e) => {
     progressBar.style.width=e.loaded/e.total*200+"px";
   
-}
+                });
         window.onload = () => {
             loadfun.classList.add("loadcomplete");
-            setTimeout( ()=> { loadfun.style.display='none';},5000)
+           // setTimeout( ()=> { loadfun.style.display='none';},5000)
         };
 </script> 
     <script src="script.js"></script>

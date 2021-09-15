@@ -301,6 +301,22 @@ header  a{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    animation: myintro 10s ease-out ;
+}
+.cardintro {
+    animation: myintro 5s linear ease-out;
+}
+@keyframes myintro {
+    0% {
+        transform: scale(1.5) rotateY(50deg) rotateX(30deg);
+    }
+    90% {
+         transform: scale(.9) rotateY(0deg) rotateX(0deg);
+    }
+    100% {
+        transform: scale(1) rotateY(0deg) rotateX(0deg);
+
+    }
 }
 .pic {
     display: flex;
