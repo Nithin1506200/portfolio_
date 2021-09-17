@@ -155,7 +155,7 @@
                 <li>Analog electronics</li>
                 <li>Op-amps as voltage follower is a unity-gain, noninverting buffer </li>
                 <li>Op-amps as signal subtractor</li>
-                <li>Op-amp al Low pass filter</li>
+                <li>Op-amp as Low pass filter</li>
                 <li>Basic understanding of stereo mixing and signal manipulation</li>
             </ul>
         </div>
@@ -220,13 +220,8 @@
 </div>
  <script >
         let loadfun=document.querySelector(".preload");
-        let progressBar=document.querySelector(".windowprogress");
-        client = new XMLHttpRequest();
-    let caard = document.querySelector(".card");
-    client.upload.addEventListener("progress", (e) => {
-    progressBar.style.width=e.loaded/e.total*200+"px";
-  
-                });
+                        let progressBar = document.querySelector(".windowprogress");
+
         window.onload = () => {
             loadfun.classList.add("loadcomplete");
             setTimeout(() => { loadfun.style.display = 'none'; }, 5000)
